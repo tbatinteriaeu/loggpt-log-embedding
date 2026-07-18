@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    bootstrap-servers: ${spring.embedded.kafka.brokers}
+    consumer:
+      group-id: loggpt-embedding-group-test
+      auto-offset-reset: earliest
+
+kafka:
+  topics:
+    logs-raw: logs.raw
